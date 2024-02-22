@@ -10,17 +10,20 @@ import SignatureMenu from "../components/home-components/SignatureMenu"
 
 const HomeScreen = () => {
   return (
-    <div>
-      <Header/>
-      <HeroText/>
-      <HeroImage/>
-      <ChooseCoffee/>
-      <SignatureMenu/>
-      <BookTeaHome/>
-      <CustomerReview/>
-      <Footer/>
-    </div>
-  )
-}
+    <div className=" bg-[#D2B48C] bg-opacity-20">
+      
+      <Header />
+      <div className="container mx-auto">
+          <HeroText />
+          <HeroImage />
+          <ChooseCoffee />
+          <SignatureMenu />
+      </div>
+      
+      <Footer /></div>
+      
+  );
+};
+
 
 export default HomeScreen

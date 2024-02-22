@@ -1,20 +1,30 @@
-import React from 'react'
+import React from 'react';
 
 const HeroText = () => {
-  return (
-    <div className='w-full bg-black p-5 flex flex-col gap-12 items-center pt-28'>
-        <div className='text-HigherText text-2xl md:text-6xl font-bold text-center'>
-            <h1>
-                The Cafe Lago For Work
-            </h1>
-        </div>
-        <div className='text-LowerText text-center text-sm font-medium md:text-md'>
-            <p>
-                Cafe Lago Since 2022 And Bring Comfortable To More Than 10, 000 Customers And Still Growing And<br/> Come With More Than 3 Years Experience To Present The Working For Everyone
-            </p>
-        </div>
-    </div>
-  )
-}
+    const videoSource = 'https://assets.mixkit.co/videos/preview/mixkit-video-sequence-of-the-coffee-preparation-process-4989-large.mp4'; // Replace with your video source
 
-export default HeroText
+    return (
+        <div className='relative w-full overflow-hidden bg-brown'>
+            {/* Video background with dark overlay */}
+            <video
+                autoPlay
+                loop
+                muted
+                className='w-full h-full object-cover opacity-90'
+                style={{ filter: 'brightness(70%)' }}
+            >
+                <source src={videoSource} type='video/mp4' />
+                Your browser does not support the video tag.
+            </video>
+
+            {/* Text overlay */}
+            <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white'>
+                <h1 className='text-2xl md:text-6xl font-bold mb-4'>
+                    Welcome to <br></br> Cafe Lago
+                </h1>
+            </div>
+        </div>
+    );
+};
+
+export default HeroText;

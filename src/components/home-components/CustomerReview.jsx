@@ -74,7 +74,7 @@ const CustomerReview = () => {
 
       
   return (
-   <section className='w-full p-5 flex flex-col bg-black text-center gap-y-20'>
+   <section className='w-full p-5 flex flex-col text-center gap-y-20'>
         <div>
             <h1 className='text-HigherText font-bold text-3xl'>
                 Some of Our Happy Customer

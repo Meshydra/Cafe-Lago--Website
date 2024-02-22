@@ -6,7 +6,7 @@ const BookTeaHome = () => {
         image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     }
   return (
-    <section className='w-full min-h-screen bg-black flex flex-col md:flex-row items-center justify-around p-5 gap-12'>
+    <section className='w-full min-h-screen flex flex-col md:flex-row items-center justify-around p-5 gap-12'>
         {/* Image Side */}
         <div className='bg-red-50 md:w-[50%]'>
             <img src={image.image} alt="coffe with cheers" className='object-cover aspect-video'/>
